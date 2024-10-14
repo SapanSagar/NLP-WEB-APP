@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NLP APP | Translation</title>
+</head>
+<body>
+
+    <h1>NLP App</h1>
+
+    <h3>Translation</h3>
+
+   
+    <form action="/perform_translation" method="post">
+        <label>Enter Your Text Here</label><br>
+        <textarea name="translation_text"></textarea><br><br>
+        <label>Language to Translate?</label><br>
+        <textarea name="translation_language"></textarea><br><br>
+        <input type="submit" value="Language Translation">
+        
+       
+    </form>
+
+    
+
+    {% if response %}
+        <p>Translation: {{ response }}</p>
+    
+    {% endif %}
+
+    <br>
+    <form action="/profile">
+        <input type="submit" value="Home">
+    
+    <form action="/logout" method="post">
+        <input type="submit" value="Logout">
+    </form>
+
+
+    
+
+</body>
+</html>
