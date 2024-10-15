@@ -18,7 +18,7 @@ AWS-CI/CD-Deployment-with-Github-Actions
     Create access Key and download the CSV
 3. Create ECR repo to store/save docker image
     search ECR under services--Create a Repo--Give Project Name
-    copy URI :418295686854.dkr.ecr.eu-north-1.amazonaws.com/nlp-app
+    copy URI :something.dkr.ecr.something.amazonaws.com/nlp-app
 
 4. Create EC2 machine (Ubuntu)
     Search EC2 under Services--launch instance--give name--select ubuntu--and version--select instance type as per need--key value pair--create instance and connect
@@ -54,7 +54,7 @@ AWS_SECRET_ACCESS_KEY=
 
 AWS_REGION = eu-north-1
 
-AWS_ECR_LOGIN_URI = 418295686854.dkr.ecr.eu-north-1.amazonaws.com
+AWS_ECR_LOGIN_URI = something.dkr.ecr.something.amazonaws.com
 
 ECR_REPOSITORY_NAME = nlp-app
 
