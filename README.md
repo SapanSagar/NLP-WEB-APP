@@ -40,6 +40,24 @@ sudo usermod -aG docker ubuntu
 
 newgrp docker
 
+# to check docker version 
+docker --version
+
+6. Configure EC2 as self-hosted runner: Go to your Github Repo-->
+setting>actions>runner>new self hosted runner> choose os> then run command one by one
+
+7. Setup github secrets: Github repo--Settings--secrets and variable--Action--New repo secrets
+
+AWS_ACCESS_KEY_ID=
+
+AWS_SECRET_ACCESS_KEY=
+
+AWS_REGION = eu-north-1
+
+AWS_ECR_LOGIN_URI = 418295686854.dkr.ecr.eu-north-1.amazonaws.com
+
+ECR_REPOSITORY_NAME = nlp-app
+
 
 
 
